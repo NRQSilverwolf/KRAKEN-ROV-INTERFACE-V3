@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    background: #121933;
+    border-bottom: 2px solid #2a3566;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding: 18px;
+}
+
+.grid-item {
+    background: #151d36;
+    border: 2px solid #2a3566;
+    border-radius: 14px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.camera-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.camera-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.camera-wrapper canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.camera-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.compartment-label {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.detect-status {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #8cff8c;
+}
+
+.sensor-placeholder {
+    margin-top: 20px;
+    color: #b9c3ff;
+    font-size: 16px;
+}
